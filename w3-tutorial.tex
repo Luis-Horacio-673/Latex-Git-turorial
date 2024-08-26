@@ -1,0 +1,102 @@
+\documentclass[a4paper,11pt]{book} [twoside]
+%\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{pdflscape}% para poder usar orientacion landscape
+%\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc} 
+\usepackage[spanish, es-noshorthands]{babel} % para que tome los arrows 
+\usepackage[spanish]{babel}
+\usepackage{textcomp}
+\usepackage[dvipsnames]{xcolor} % colores definidos para las cajas en tex
+\usepackage[most]{tcolorbox}% para cajas coloreadas
+\usepackage{soul}% para resaltar textos
+\usepackage{fancyhdr}%encabezados y pie de pagina
+\pagestyle{fancy} %encabezados y pie de pagina
+\fancyhf{} % para borrar los valores que vienen por defecto.
+\renewcommand{\footrulewidth}{0.4pt}
+\newcommand{\setFooterL}[1]{
+	\fancyfoot[L]{\small\textit{#1}}
+}
+\newcommand{\setFooterR}[1]{
+	\fancyfoot[R]{\small\textit{#1}}
+}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage[american]{circuitikz-0.8.3}
+%\usepackage[all]{xy} 
+%\usetikzlibrary{calc,through}
+%\usetikzlibrary{arrows,decorations,backgrounds}
+%\tikzstyle{every picture}+=[remember picture]
+\usepackage{eurosym}%para el euro
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{bondgraphs}
+\usepackage{pgfplots}%pgfplots agregado para graficas de funciones
+
+\pgfplotsset{compat=1.5}
+\usepackage{pstricks,pst-node}
+\setcounter{secnumdepth}{3} % para que ponga 1.1.1.1 en subsubsecciones
+\setcounter{tocdepth}{3} % para que ponga subsubsecciones en el indice
+
+
+% ---------------
+
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+
+\usepackage{colortbl} %le doy color a una celda
+\definecolor{gris}{RGB}{242,242,242}
+\usepackage{multirow}% para varias filas en Tablas
+\usepackage{booktabs}% para darle color a las tablas 
+\usepackage{colortbl} % para darle color a las tablas
+
+\usepackage{xcolor}[table]
+\definecolor{gris}{RGB}{242,242,242}
+\definecolor{codegreen} {rgb} {0,0.6,0}
+\definecolor{codegray} {rgb} {0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor} {rgb} {0.95,0.95,0.92}
+
+\usepackage{listings} % para escribir codigo de programación
+\renewcommand\lstlistingname{Código fuente}
+\renewcommand\lstlistlistingname{Código fuente}
+\lstdefinestyle{codestyle}{
+	backgroundcolor=\color{backcolor},
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	%	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	numbers=left,
+	%	numbersep=5pt
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+	xleftmargin=10pt
+}
+
+\lstset{style=codestyle}
+
+\usepackage{tcolorbox}% para la portada de tcolorbox
+\usepackage{incgraph}%  para la portada de tcolorbox
+\usepackage{subcaption}
+\newcommand{\inte}{$\displaystyle \int$}
+\usepackage{parskip}
+
+
+\begin{document}
+	\tableofcontents
+
+\end{document}
